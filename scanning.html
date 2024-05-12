@@ -18,8 +18,9 @@
             text-align: center;
         }
         #scanner {
-            width: 300px; /* Adjust the width of the scanner */
-            height: 300px; /* Adjust the height of the scanner */
+            width: 90vw; /* Adjust width for both desktop and mobile */
+            max-width: 300px; /* Set max-width for larger screens */
+            height: auto; /* Auto-adjust height */
             margin-bottom: 20px;
             border: 2px solid maroon;
             border-radius: 5px;
@@ -45,6 +46,13 @@
         }
         .confirm-btn:hover {
             background-color: #8b0000;
+        }
+
+        /* Media Query for smaller screens (mobile devices) */
+        @media (max-width: 768px) {
+            #scanner {
+                width: 80vw; /* Adjust width for smaller screens */
+            }
         }
     </style>
 </head>
